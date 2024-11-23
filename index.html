@@ -12,14 +12,12 @@
             width: 100%;
         }
         #navigation,a{
-            background:blue;
             text-align: center;
-            color: white;
         }
         table{
             border-collapse: collapse;
         }
-        th{
+        {
             border: 0.25px solid aliceblue;
             background: blue;
             color: white;
@@ -33,11 +31,11 @@
 <body>
     <!-- header part start -->
     <header>
-        <div id="Sitename">
-            <h1><i class="fa-regular fa-newspaper"></i>   The New York Times</h1>
-            <p><i><q>All the News That's Fit to Print</q></i></p>
+        <div>
+            <h1 style="text-align: center;"><i class="fa-regular fa-newspaper"></i>   The New York Times</h1>
+            <p style="text-align: center;"><i><q>All the News That's Fit to Print</q></i></p>
         <!-- Update news start -->
-            <marquee behavior="scroll" direction="left">Trump Transition Live Updates: Scott Bessent, | Hedge Fund Manager,| Is Choice for Treasury!</marquee>
+            <marquee behavior="scroll" direction="left" style="background-color: gray; color: white;" ‍>Trump Transition Live Updates: Scott Bessent, | Hedge Fund Manager,| Is Choice for Treasury!</marquee>
         <!-- Update news end -->
         </div>
     </header>
@@ -56,6 +54,7 @@
             <i class="fa-solid fa-volleyball"></i>
             <a href="#">Sports</a>
         </div> -->
+        <hr>
         <div id="navigation">
             <i class="fa-solid fa-earth-americas"></i>
             <a href="">Top News</a>
@@ -68,20 +67,63 @@
             <i class="fa-regular fa-clipboard"></i>
             <a href="">How to post</a>
         </div>
+        <hr>
     </nav>
     <!-- navigation part end -->
      <!-- Top news part start -->
-     <section>
+      <section>
+        <div>
+            <table width="100%" style="text-align: center;">
+                <tr>
+                    <td width="40%">
+                        <img  src="./dryounus.jpg"  width="70%" height="350" alt="dryounus">
+                    </td>
+                    <td width="60%">
+                        <table width="100%" >
+                            <tr>
+                                <th colspan="3"> <h2> <i class="fa-solid fa-fire"></i> Top news</h2></th>
+                            </tr>
+                            <tr>
+                                <td colspan="1">
+                                    <h5 style="background-color: aqua;">World</h5>
+                                    <p>Historic Peace Agreement</p>
+                                    <p>November 22,2024</p>
+                                    <p>A peace treaty is an agreement between two or more hostile parties, usually countries or governments</p>
+                                    <button type="button">Read more</button>
+                                </td>
+                                <td colspan="1">
+                                    <h5 style="background-color: aqua;">Business</h5>
+                                    <p>Stock Market soars</p>
+                                    <p>November 22,2024</p>
+                                    <p>Bulls remained in charge Friday as major indexes scored sizable gains to close out the week.</p>
+                                    <button type="button">Read more</button>
+                                </td>
+                                <td colspan="1">
+                                    <h5 style="background-color: aqua;">Business</h5>
+                                    <p>AI Breakthroughs</p>
+                                    <p>November 22,2024</p>
+                                    <p>This technology has had a significant impact on creativity, efficiency, and innovation in many industries.</p>
+                                    <button type="button">Read more</button>
+                                </td>
+                            </tr>
+                        </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+      </section>
+     <!-- <section>
         <div>
             <h2> <i class="fa-solid fa-fire"></i> Top news</h2>
             <table>
-                <!-- table head -->
+                
                 <tr>
                     <th> <i class="fa-solid fa-list"></i> Category</th>
                     <th> <i class="fa-solid fa-heading"></i> Headline</th>
                     <th> <i class="fa-solid fa-calendar-days"></i> Date</th>
                 </tr>
-                <!-- table head end -->
+                
                 <tr>
                     <td>World</td>
                     <td>Historic Peace Agreement</td>
@@ -99,7 +141,7 @@
                 </tr>
             </table>
         </div>
-     </section>
+     </section> -->
      <!-- Top News part end -->
       <!-- World part start -->
        <section>
@@ -116,7 +158,8 @@
                 <img src="" alt="img" height="200px" width="200px">
                 <h5>New Trade Aggrement</h5>
                 <p> <i class="fa-solid fa-calendar-days"></i>  Published: November 17,2024</p>
-                <p>Read more...</p>
+                <!-- <p>Read more...</p> -->
+                 <button id="btn">Read more</button>
             </div>
        </section>
        <!-- world part end -->
@@ -171,10 +214,14 @@
         <section>
             <div>
                 <p>&copy; 2024 World Times | All Rights Reserved</p><br>
-                <p>Follow us </p>
-                    <a href="https://www.facebook.com/omaraliimran"><i class="fa-brands fa-facebook"></i></a> 
-                    <a href="https://www.facebook.com/omaraliimran"><i class="fa-brands fa-twitter"></i></a> 
-                    <a href="https://www.facebook.com/omaraliimran"><i class="fa-brands fa-instagram"></i></a>
+                <table>
+                    <tr>
+                        <td> <p>Follow us: </p> </td>
+                            <td><a href="https://www.facebook.com/omaraliimran"><i class="fa-brands fa-facebook"></i></a> </td>
+                            <td>                            <a href="https://www.facebook.com/omaraliimran"><i class="fa-brands fa-twitter"></i></a></td>
+                            <td><a href="https://www.facebook.com/omaraliimran"><i class="fa-brands fa-instagram"></i></a></td></td>
+                    </tr>
+                </table>
             </div>
         </section>
        </footer>
