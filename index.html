@@ -7,37 +7,85 @@
     <!-- Font Awesome Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Basic Css -->
-    <style>
-        #head{
-            background: rgb(4, 136, 252);
+     <style>
+        body{
+            
+        }
+        #sitename{
+            background: #e90606;
+        }
+        #navigation,a{
+            background:blue;
+            width: 100%;
+            text-align: center;
             color: white;
-            text-align: center;
         }
-        #nav,tr,td{
-            text-align: center;
+        table,tr,td{
+            border: 1px solid gray;
+            border-collapse: collapse;
+            width: 100%;
+            text-align: left;
         }
+     </style>
     </style>
 </head>
 <body>
+    <!-- header part start -->
     <header>
-        <div>
-            <h1>The New York Times</h1>
+        <div id="Sitename">
+            <h1><i class="fa-regular fa-newspaper"></i>   The New York Times</h1>
             <p><i><q>All the News That's Fit to Print</q></i></p>
+        <!-- Update news start -->
             <marquee behavior="scroll" direction="left">Trump Transition Live Updates: Scott Bessent, | Hedge Fund Manager,| Is Choice for Treasury!</marquee>
+        <!-- Update news end -->
         </div>
     </header>
-    <nav>
+    <!-- header part end -->
+     <!-- navigation part start -->
+    <nav><br>
+        <div id="navigation">
+            <i class="fa-solid fa-flag-usa"></i>
+            <a href="#">U.S</a>
+            <i class="fa-solid fa-earth-americas"></i>
+            <a href="#">World</a>
+            <i class="fa-solid fa-briefcase"></i>
+            <a href="#">Business</a>
+            <i class="fa-solid fa-mortar-pestle"></i>
+            <a href="#">Lifestyle</a>
+            <i class="fa-solid fa-volleyball"></i>
+            <a href="#">Sports</a>
+        </div>
+    </nav>
+    <!-- navigation part end -->
+     <section>
         <div>
+            <h2> <i class="fa-solid fa-fire"></i> Top news</h2>
             <table>
+                <!-- table head -->
                 <tr>
-                    <td>U.S</td>
-                    <td>World</td>
-                    <td>Business</td>
-                    <td>Lifrstyle</td>
-                    <td>Sports</td>
+                    <th> Category</th>
+                    <th> <i class="fa-solid fa-heading"></i> Headline</th>
+                    <th> <i class="fa-solid fa-calendar-days"></i> Date</th>
+                </tr>
+                <!-- table head end -->
+                <tr>
+                    <td>Diplomacy</td>
+                    <td>Trump are New President</td>
+                    <td>November 23,2024</td>
+                </tr>
+                <tr>
+                    <td>Worlcup Final</td>
+                    <td>Bangladesh win by 2 wickets</td>
+                    <td>November 23,2024</td>
+                </tr>
+                <tr>
+                    <td>Palestine</td>
+                    <td>Terrorist Israil Attack in Palestine</td>
+                    <td>November 23,2024</td>
                 </tr>
             </table>
         </div>
-    </nav>
+     </section>
+     <!-- body part start -->
 </body>
 </html>
