@@ -9,25 +9,26 @@
     <!-- Basic Css -->
      <style>
         body{
-            
-        }
-        #sitename{
-            background: #e90606;
+            width: 100%;
         }
         #navigation,a{
             background:blue;
-            width: 100%;
             text-align: center;
             color: white;
         }
-        table,tr,td{
-            border: 1px solid gray;
+        table{
             border-collapse: collapse;
-            width: 100%;
-            text-align: left;
+        }
+        th{
+            border: 0.25px solid aliceblue;
+            background: blue;
+            color: white;
+            width:900px;
+        }
+        td{
+            border: 1px solid antiquewhite;
         }
      </style>
-    </style>
 </head>
 <body>
     <!-- header part start -->
@@ -43,7 +44,7 @@
     <!-- header part end -->
      <!-- navigation part start -->
     <nav><br>
-        <div id="navigation">
+        <!-- <div id="navigation">
             <i class="fa-solid fa-flag-usa"></i>
             <a href="#">U.S</a>
             <i class="fa-solid fa-earth-americas"></i>
@@ -54,38 +55,129 @@
             <a href="#">Lifestyle</a>
             <i class="fa-solid fa-volleyball"></i>
             <a href="#">Sports</a>
+        </div> -->
+        <div id="navigation">
+            <i class="fa-solid fa-earth-americas"></i>
+            <a href="">Top News</a>
+            <i class="fa-solid fa-handshake"></i>
+            <a href="">Global Diplomacy</a>
+            <i class="fa-solid fa-microchip"></i>
+            <a href="">Tech Innovation</a>
+            <i class="fa-solid fa-shuttle-space"></i>
+            <a href="">Sports & News</a>
+            <i class="fa-regular fa-clipboard"></i>
+            <a href="">How to post</a>
         </div>
     </nav>
     <!-- navigation part end -->
+     <!-- Top news part start -->
      <section>
         <div>
             <h2> <i class="fa-solid fa-fire"></i> Top news</h2>
             <table>
                 <!-- table head -->
                 <tr>
-                    <th> Category</th>
+                    <th> <i class="fa-solid fa-list"></i> Category</th>
                     <th> <i class="fa-solid fa-heading"></i> Headline</th>
                     <th> <i class="fa-solid fa-calendar-days"></i> Date</th>
                 </tr>
                 <!-- table head end -->
                 <tr>
-                    <td>Diplomacy</td>
-                    <td>Trump are New President</td>
-                    <td>November 23,2024</td>
+                    <td>World</td>
+                    <td>Historic Peace Agreement</td>
+                    <td>November 22,2024</td>
                 </tr>
                 <tr>
-                    <td>Worlcup Final</td>
-                    <td>Bangladesh win by 2 wickets</td>
-                    <td>November 23,2024</td>
+                    <td>Business</td>
+                    <td>Stock Market soars </td>
+                    <td>November 21,2024</td>
                 </tr>
                 <tr>
-                    <td>Palestine</td>
-                    <td>Terrorist Israil Attack in Palestine</td>
-                    <td>November 23,2024</td>
+                    <td>Technology</td>
+                    <td>AI Breakthroughs</td>
+                    <td>November 20,2024</td>
                 </tr>
             </table>
         </div>
      </section>
-     <!-- body part start -->
+     <!-- Top News part end -->
+      <!-- World part start -->
+       <section>
+            <div> <hr>
+                <h3> <i class="fa-solid fa-handshake"></i> Global Deplomacy</h3><hr>
+            </div>
+            <div>
+                <img src="" alt="img" height="200px" width="200px">
+                <h4> <i class="fa-solid fa-handshake"></i> Global Summit held</h4>
+                <p> <i class="fa-solid fa-calendar-days"></i>  Published: November18,2024</p>
+                <a href="#">Read more</a>
+            </div><hr>
+            <div>
+                <img src="" alt="img" height="200px" width="200px">
+                <h5>New Trade Aggrement</h5>
+                <p> <i class="fa-solid fa-calendar-days"></i>  Published: November 17,2024</p>
+                <p>Read more...</p>
+            </div>
+       </section>
+       <!-- world part end -->
+        <!-- Business Part start -->
+         <section>
+            <div>
+               <h3> <i class="fa-solid fa-gears"></i> Tech Innovation</h3>
+               <img src="" alt="img" height="200px" width="200px">
+               <h4> <i class="fa-solid fa-laptop"></i> AI Revolation Business</h4>
+               <p> <i class="fa-solid fa-calendar-days"></i>  Published: November 17,2024</p>
+                <p>Read more...</p>
+            </div>
+         </section>
+        <!-- Business Part end -->
+         <!-- sports and space start -->
+          <section>
+            <div>
+                <h3> <i class="fa-solid fa-rocket"></i> Sports & Space News</h3>
+                <img src="" alt="img" height="200px" width="200px">
+                <h5> <i class="fa-solid fa-volleyball"></i> World Cup Finals</h5>
+                <p> <i class="fa-solid fa-calendar-days"></i>  Published: November 17,2024</p>
+                <p>Read more...</p>
+            </div>
+          </section>
+         <!-- sports and space end -->
+          <!-- submit your news start -->
+           <h3>Submit Your News</h3>
+           <form>
+            <fieldset>
+                <legend>Feedback Form</legend>
+                <label for="fname">Name:</label><br>
+                <input type="text" id="fname" value="Enter your name"><br><br>
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" value="Enter your email"><br><br>
+                <label for="textarea">Feedback:</label><br>
+                <textarea  id="textarea" rows="5" cols="20">Enter your text</textarea><br><br><br>
+                <button> <i class="fa-solid fa-paper-plane"></i> Submit</button>
+            </fieldset>
+           </form>
+          <!-- submit your news end -->
+           <!-- How To Post start -->
+            <section>
+                <div>
+                    <h3> <i class="fa-solid fa-paper-plane"></i> How To Post</h3>
+                    <iframe width="900" height="315" src="https://www.youtube.com/embed/kvyWeTXCSKk?si=0epN4Oj5ilRSht6Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </section>
+           <!-- How To Post end -->
+     <!-- body part end -->
+      <!-- Footer part start -->
+       <footer>
+        <section>
+            <div>
+                <p>&copy; 2024 World Times | All Rights Reserved</p><br>
+                <p>Follow us </p>
+                    <a href="https://www.facebook.com/omaraliimran"><i class="fa-brands fa-facebook"></i></a> 
+                    <a href="https://www.facebook.com/omaraliimran"><i class="fa-brands fa-twitter"></i></a> 
+                    <a href="https://www.facebook.com/omaraliimran"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </section>
+       </footer>
+      <!-- Footer part end -->
 </body>
 </html>
